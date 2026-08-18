@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jessica Oldov — Software Engineer</title>
+<meta name="description" content="Jessica Oldov — Software Engineer building real-time pricing infrastructure at Liberty Mutual. Duke CS '25. Ex-Meta PyTorch fellow.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="gradient-bar" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a href="#top" class="logo">JO</a>
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span>New York, NY</p>
+    <h1>Jessica Oldov</h1>
+    <p class="hero-role">Software Engineer</p>
+    <p class="hero-bio">
+      I build real‑time pricing infrastructure at <strong>Liberty Mutual</strong>, currently
+      processing 10K+ policies a month in production. Duke CS '25, minor in Russian
+      Culture and Language. Formerly a PyTorch fellow at Meta.
+    </p>
+    <div class="hero-links">
+      <a class="btn btn-primary" href="mailto:jeoldov@gmail.com">Say hello</a>
+      <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="Jessica_Oldov_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span>About</p>
+    <p class="about-text">
+      I'm a software engineer working on high‑scale, real‑time systems — most recently
+      pricing logic that touches millions of insurance policies. I care about code that
+      holds up under load and tests that actually catch the bug before it ships. Outside
+      of production systems, I spent a fellowship at Meta optimizing how PyTorch
+      serializes billion‑parameter model checkpoints, and I still like digging into
+      infrastructure problems that sit close to the metal.
+    </p>
+  </section>
+
+  <section id="experience" class="section">
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Experience</p>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Software Engineer</h3>
+        <span class="entry-date">Jul 2025 — Present</span>
+      </div>
+      <p class="entry-org">Liberty Mutual Insurance · New York, NY</p>
+      <ul>
+        <li>Led implementation of Teen‑Driver Discount logic deployed to production for 3 states, processing 10K+ eligible policies a month and reducing qualifying premiums by 8%</li>
+        <li>Built a Java 21 / Spring Boot microservice integrating 120+ actuarial risk variables across Kafka, MongoDB, and REST APIs — cutting pricing variance by 7% and improving annual premium accuracy by $12M+</li>
+        <li>Maintained automated test suites with JUnit 5, Mockito, and Spring Boot Test, holding 98% coverage across core rating logic</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Software Engineering Fellow — Meta (PyTorch)</h3>
+        <span class="entry-date">Sep — Dec 2024</span>
+      </div>
+      <p class="entry-org">MLH Fellowship · Remote</p>
+      <ul>
+        <li>Optimized PyTorch checkpoint serialization in Python and C++, refactoring tensor storage allocation for a 15% reduction in serialization time on 1B+ parameter models</li>
+        <li>Led sprint planning and issue triage for a 4‑person contributor team, merging 12 PRs into the PyTorch main branch and accelerating critical bug resolution by 25%</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Software Engineer Intern</h3>
+        <span class="entry-date">Jun — Aug 2024</span>
+      </div>
+      <p class="entry-org">Liberty Mutual Insurance · Indianapolis, IN</p>
+      <ul>
+        <li>Built a TypeScript / Node.js serverless payment workflow on AWS Lambda, API Gateway, and DynamoDB, automating 500+ daily transactions and cutting manual processing time by 20%</li>
+        <li>Built conversational payment flows with Amazon Lex and Lambda, deflecting 35% of payment calls from live agents</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Undergraduate Teaching Assistant, Computer Science</h3>
+        <span class="entry-date">Jan 2023 — May 2025</span>
+      </div>
+      <p class="entry-org">Duke University · Durham, NC</p>
+      <ul>
+        <li>Mentored 150+ students across 4 semesters in software engineering fundamentals (Ruby on Rails, Sinatra); consistently rated among top TAs</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Projects</p>
+
+    <div class="project-grid">
+      <article class="project-card">
+        <h3>Small Claims Insurance Application</h3>
+        <p class="project-stack">Python · AWS Lambda · DynamoDB · Datadog · OpenAI API</p>
+        <p>Serverless claims platform with OpenAI‑powered conversational intake, cutting submission time from 12 to 4 minutes. Deployed to 200+ users in its first month; reduced API latency 30% by optimizing DynamoDB query patterns and mitigating Lambda cold starts.</p>
+      </article>
+
+      <article class="project-card">
+        <h3>myLearning App</h3>
+        <p class="project-stack">React · TypeScript · Node.js · Express · Next.js · MongoDB · Redis</p>
+        <p>Co‑led a team of 4 building a full‑stack resource‑sharing platform with MongoDB aggregation pipelines for search and Redis caching that cut query response time by 45%. Won 3rd place out of 40+ teams at Liberty Mutual's annual Hackathon.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Skills</p>
+    <div class="skills-grid">
+      <div>
+        <h4>Languages</h4>
+        <p>Java, Python, TypeScript, JavaScript, C++, SQL</p>
+      </div>
+      <div>
+        <h4>Frameworks</h4>
+        <p>Spring Boot, React, Node.js, Next.js, Express.js</p>
+      </div>
+      <div>
+        <h4>Cloud &amp; Infra</h4>
+        <p>AWS (Lambda, DynamoDB, API Gateway, S3, SQS), Kafka, Docker, PostgreSQL, MongoDB, Redis, CI/CD</p>
+      </div>
+      <div>
+        <h4>Data &amp; ML</h4>
+        <p>OpenAI API, PyTorch, TensorFlow, scikit-learn, pandas, NumPy</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact" class="site-footer">
+  <p class="footer-cta">Building something interesting? <a href="mailto:jeoldov@gmail.com">Let's talk</a>.</p>
+  <div class="footer-links">
+    <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:jeoldov@gmail.com">Email</a>
+  </div>
+  <p class="footer-note">© 2026 Jessica Oldov</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
