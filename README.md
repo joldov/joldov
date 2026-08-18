@@ -2,7 +2,7 @@
 
 My personal portfolio site for 2026!
 
-**Live site:** https://jessicaoldov.github.io
+**Live site:** [here](https://joldov.github.io/joldov/)
 
 ## Stack
 Plain HTML, CSS, and JS.
