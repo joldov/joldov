@@ -13,9 +13,9 @@
     #3da9ff 78%,
     #a85dff 100%);
 
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
   --max-w: 720px;
 }
@@ -35,7 +35,8 @@ body {
   color: var(--ink);
   font-family: var(--font-body);
   font-size: 16px;
-  line-height: 1.6;
+  font-weight: 500;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -59,12 +60,12 @@ body {
 }
 
 .logo {
-  font-family: var(--font-mono);
-  font-weight: 500;
+  font-family: var(--font-body);
+  font-weight: 600;
   font-size: 14px;
   color: var(--ink);
   text-decoration: none;
-  letter-spacing: 0.02em;
+  letter-spacing: normal;
 }
 
 .nav {
@@ -73,30 +74,20 @@ body {
 }
 
 .nav a {
-  font-family: var(--font-mono);
-  font-size: 13px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 14px;
   color: var(--ink-soft);
-  text-decoration: none;
-  letter-spacing: 0.01em;
-  position: relative;
-  padding-bottom: 3px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  letter-spacing: normal;
 }
 
-.nav a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 1.5px;
-  background: var(--gradient);
-  transition: width 0.25s ease;
+.nav a:hover,
+.nav a.is-active {
+  color: var(--ink);
 }
-
-.nav a:hover { color: var(--ink); }
-.nav a:hover::after { width: 100%; }
-.nav a.is-active { color: var(--ink); }
-.nav a.is-active::after { width: 100%; }
 
 /* Layout */
 main {
@@ -132,31 +123,66 @@ main {
 
 /* Hero */
 .hero {
-  padding: 88px 0 56px;
+  padding: 64px 0 48px;
+}
+
+.gradient-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: linear-gradient(115deg,
+    #ff3d68 0%,
+    #ff9f3d 20%,
+    #ffd93d 38%,
+    #3ed07c 55%,
+    #3da9ff 72%,
+    #a85dff 88%,
+    #ff3d68 100%);
+  background-size: 500% 500%;
+  animation: gradient-river 8s ease infinite;
+  transition: animation-duration 0.2s ease;
+}
+
+.gradient-icon:hover {
+  animation-duration: 2s;
+}
+
+@keyframes gradient-river {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gradient-icon { animation: none; }
 }
 
 .hero h1 {
   font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(2.4rem, 6vw, 3.4rem);
-  line-height: 1.05;
-  margin: 0 0 6px;
-  letter-spacing: -0.02em;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0 0 2px;
+  letter-spacing: normal;
 }
 
 .hero-role {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 1.15rem;
+  font-size: 1rem;
+  line-height: 1.5;
   color: var(--ink-soft);
-  margin: 0 0 24px;
+  margin: 0 0 20px;
 }
 
 .hero-bio {
-  max-width: 56ch;
-  font-size: 1.02rem;
+  max-width: 58ch;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
   color: var(--ink);
-  margin: 0 0 32px;
+  margin: 0 0 28px;
 }
 
 .hero-bio strong { font-weight: 600; }
@@ -223,7 +249,7 @@ main {
 
 .entry-head h3 {
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   font-weight: 600;
   margin: 0;
 }
@@ -286,7 +312,7 @@ main {
 
 .project-card h3 {
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   margin: 0 0 6px;
 }
 
@@ -335,7 +361,7 @@ main {
 
 .footer-cta {
   font-family: var(--font-display);
-  font-size: 1.3rem;
+  font-size: 1.05rem;
   margin: 0 0 24px;
 }
 
