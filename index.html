@@ -110,6 +110,12 @@
 
     <div class="project-grid">
       <article class="project-card">
+        <h3>Nightlife Digest</h3>
+        <p class="project-stack">Python · BeautifulSoup4 · Gemini API · GitHub Actions · SMTP</p>
+        <p>Automated weekly email digest of upcoming shows at a Brooklyn venue, running end-to-end with zero manual steps. Scrapes event data via Schema.org microdata instead of fragile CSS selectors (the site's Next.js class names regenerate on every deploy), summarizes the lineup with the Gemini API into a casual HTML digest, and ships it via Gmail SMTP on a GitHub Actions cron schedule with credentials managed through repo secrets.</p>
+      </article>
+      
+      <article class="project-card">
         <h3>Small Claims Insurance Application</h3>
         <p class="project-stack">Python · AWS Lambda · DynamoDB · Datadog · OpenAI API</p>
         <p>Serverless claims platform with OpenAI‑powered conversational intake, cutting submission time from 12 to 4 minutes. Deployed to 200+ users in its first month; reduced API latency 30% by optimizing DynamoDB query patterns and mitigating Lambda cold starts.</p>
