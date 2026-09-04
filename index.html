@@ -105,29 +105,52 @@
     </div>
   </section>
 
-  <section id="projects" class="section">
-    <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Projects</p>
-
     <div class="project-grid">
       <article class="project-card">
-        <h3>Nightlife Digest</h3>
+        <h3><a href="https://github.com/joldov/nightlife-digest" target="_blank" rel="noopener">Nightlife Digest</a></h3>
         <p class="project-stack">Python · BeautifulSoup4 · Gemini API · GitHub Actions · SMTP</p>
         <p>Automated weekly email digest of upcoming shows at a Brooklyn venue, running end-to-end with zero manual steps. Scrapes event data via Schema.org microdata instead of fragile CSS selectors (the site's Next.js class names regenerate on every deploy), summarizes the lineup with the Gemini API into a casual HTML digest, and ships it via Gmail SMTP on a GitHub Actions cron schedule with credentials managed through repo secrets.</p>
       </article>
-      
+ 
+      <article class="project-card">
+        <h3>Classical ML vs. Deep Learning for Text Classification</h3>
+        <p class="project-stack">Python · HuggingFace · PyTorch · scikit-learn · BERT</p>
+        <p>Co‑authored a research paper benchmarking Random Forest, SVM, and KNN against a fine‑tuned BERT model on the Stanford Sentiment Treebank (SST2) sentiment classification task. Used HuggingFace tokenizer/AutoModel embeddings for BERT and K‑Fold cross‑validation to tune the classical models. BERT outperformed all classical baselines on accuracy, precision, recall, and F1 (0.950 vs. ~0.87 range), though at meaningfully higher compute cost.</p>
+        <a class="project-link" href="images/paper.pdf" target="_blank" rel="noopener">Read the paper →</a>
+      </article>
+ 
+      <article class="project-card">
+        <h3><a href="https://github.com/joldov/Mini-Amazon" target="_blank" rel="noopener">Mini-Amazon</a></h3>
+        <p class="project-stack">Python · Flask · PostgreSQL · SQL</p>
+        <p>Team project (5 members) building a miniature e-commerce platform where sellers list and manage inventory and buyers browse, purchase, and review products using an in-app virtual currency. Owned the reviews and social features: product/seller reviews restricted to verified purchasers, review upvoting, a top-3-most-upvoted display per product, image uploads/removal on reviews without deleting them, and paginated, sortable review history for each user.</p>
+      </article>
+ 
+      <article class="project-card">
+        <h3><a href="https://github.com/joldov/Welcome-Aboard" target="_blank" rel="noopener">Welcome Aboard</a></h3>
+        <p class="project-stack">HTML · CSS · JavaScript · Figma · Locofy</p>
+        <p>Interactive onboarding site for incoming tech interns and employees at Liberty Mutual. Tech leads assign customizable tasks, each paired with a written guide and setup video; a comment section with a badge system lets new hires get help from engineers who've already solved the same issue. Includes an AI chatbot, LiMu, that answers setup questions on demand, plus a demo feed showcasing all available tasks and videos. Prototyped in Figma and translated into base code with a design-to-code plugin.</p>
+      </article>
+ 
+      <article class="project-card">
+        <h3><a href="https://github.com/joldov/Recommender-System" target="_blank" rel="noopener">Recommender System</a></h3>
+        <p class="project-stack">Python</p>
+        <p>Recommendation engine that generates movie and book suggestions from user rating data, with separate data readers for each domain and a dedicated test suite validating recommendation output.</p>
+      </article>
+ 
       <article class="project-card">
         <h3>Small Claims Insurance Application</h3>
         <p class="project-stack">Python · AWS Lambda · DynamoDB · Datadog · OpenAI API</p>
         <p>Serverless claims platform with OpenAI‑powered conversational intake, cutting submission time from 12 to 4 minutes. Deployed to 200+ users in its first month; reduced API latency 30% by optimizing DynamoDB query patterns and mitigating Lambda cold starts.</p>
       </article>
-
+ 
       <article class="project-card">
-        <h3>myLearning App</h3>
+        <h3><a href="https://github.com/joldov/LibertyHackathon24" target="_blank" rel="noopener">myLearning App</a></h3>
         <p class="project-stack">React · TypeScript · Node.js · Express · Next.js · MongoDB · Redis</p>
         <p>Co‑led a team of 4 building a full‑stack resource‑sharing platform with MongoDB aggregation pipelines for search and Redis caching that cut query response time by 45%. Won 3rd place out of 40+ teams at Liberty Mutual's annual Hackathon.</p>
       </article>
     </div>
   </section>
+ 
 
   <section class="section">
     <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Skills</p>
