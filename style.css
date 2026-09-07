@@ -408,3 +408,29 @@ main {
   .section { padding: 48px 0; }
   .skills-grid { grid-template-columns: 1fr; }
 }
+.motto {
+  margin-bottom: 32px;
+}
+
+.motto-eyebrow {
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.motto-code {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  padding: 16px 22px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.motto-code .mk { color: #a85dff; }  
+.motto-code .mv { color: #3da9ff; }  
+.motto-code .mf { color: #ff3d68; }  
