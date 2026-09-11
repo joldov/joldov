@@ -29,21 +29,24 @@
     <h1>Jessica Oldov</h1>
     <p class="hero-role">Software Engineer</p>
     <p class="hero-bio">
-      I build real‑time pricing infrastructure at Liberty Mutual, currently
-      processing 10K+ policies a month in production. Duke CS '25, minor in Russian
-      Culture and Language. Formerly a PyTorch fellow at Meta.
-      </p>
-    <p class="hero-bio">
-      I'm especially interested in AI/ML and how incorporating them into our production systems can enhance user experience and business outcomes.
+      Duke CS '25, formerly a PyTorch fellow at Meta.
     </p>
     <p class="hero-bio">
-      I love reading up on not just how to build models, but understanding the tradeoffs between them:
-      where classical methods hold up, where deep learning actually earns its extra
-      compute cost, and how to make that call for a given problem.
+      I'm a backend engineer at Liberty Mutual building real-time pricing
+      infrastructure that processes 10K+ policies a month in production. I do
+      my best not to give people the wrong bill.
     </p>
     <p class="hero-bio">
-      Outside of work, I grew up trilingual (Russian, Mongolian, English), studied abroad in Prague where I learned Czech, and am currently self-studying French and 
-      Japanese. I also keep a close eye on where AI is headed, and go back to Kurzweil and Bostrom more than most people probably think is normal.
+      Outside of that, I grew up trilingual (Russian, Mongolian, English) and
+      noticed AI tools consistently butcher Mongolian, so I measured it: some
+      tokenizers need almost 4x as many tokens for Mongolian as for English. 
+      Safe to say, I don't think AI knows Mongolian very well. 
+    </p>
+    
+    <p class="hero-bio">
+      Also fluent in Czech (studied abroad in Prague), currently learning
+      French and Japanese. Current favorite authors: Nick Bostrom and Ray
+      Kurzweil.
     </p>
     <div class="hero-links">
       <a class="btn btn-primary" href="mailto:jeoldov@gmail.com">Say hello</a>
@@ -107,6 +110,11 @@
 
     <div class="project-grid">
       <article class="project-card">
+        <h3><a href="https://github.com/joldov/tokenizer-efficiency-comparison" target="_blank" rel="noopener">Tokenizer Efficiency Across Languages</a></h3>
+        <p class="project-stack">Python · Hugging Face Transformers · tiktoken · FLORES-200 · Jupyter · pandas · matplotlib</p>
+        <p>Measured how efficiently 6 tokenizers (GPT-4, GPT-4o, Llama-3, Mistral, mBERT, NLLB-200) encode 5 languages using FLORES-200 parallel data, prompted by noticing how badly AI tools handle Mongolian, my native second language. Found Mongolian was the least efficiently tokenized language across every model tested (up to 3.74x more tokens than English for identical content) and that the gap is far smaller in tokenizers purpose-built for multilingual coverage (NLLB-200) than general-purpose ones, suggesting it's a solvable design choice rather than an inherent limit.</p>
+      </article>
+      <article class="project-card">
         <h3><a href="https://github.com/joldov/nightlife-digest" target="_blank" rel="noopener">Nightlife Digest</a></h3>
         <p class="project-stack">Python · BeautifulSoup4 · Gemini API · GitHub Actions · SMTP</p>
         <p>Automated weekly email digest of upcoming shows at a Brooklyn venue, running end-to-end with zero manual steps. Scrapes event data via Schema.org microdata instead of fragile CSS selectors (the site's Next.js class names regenerate on every deploy), summarizes the lineup with the Gemini API into a casual HTML digest, and ships it via Gmail SMTP on a GitHub Actions cron schedule with credentials managed through repo secrets.</p>
@@ -154,25 +162,28 @@
 
   <section class="section">
     <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Skills</p>
-    <div class="skills-grid">
-      <div>
-        <h4>Languages</h4>
-        <p>Java, Python, TypeScript, JavaScript, C++, SQL</p>
-      </div>
-      <div>
-        <h4>Frameworks</h4>
-        <p>Spring Boot, React, Node.js, Next.js, Express.js</p>
-      </div>
-      <div>
-        <h4>Cloud &amp; Infra</h4>
-        <p>AWS (Lambda, DynamoDB, API Gateway, S3, SQS), Kafka, Docker, PostgreSQL, MongoDB, Redis, CI/CD</p>
-      </div>
-      <div>
-        <h4>Data &amp; ML</h4>
-        <p>OpenAI API, Google Gemini API, PyTorch, TensorFlow, scikit-learn, pandas, NumPy</p>
-      </div>
-    </div>
-  </section>
+  <div class="skills-grid">
+  <div>
+    <h4>Languages</h4>
+    <p>Java, Python, TypeScript, JavaScript, C++, SQL</p>
+  </div>
+  <div>
+    <h4>Frameworks</h4>
+    <p>Spring Boot, React, Node.js, Next.js, Express.js</p>
+  </div>
+  <div>
+    <h4>Cloud &amp; Infra</h4>
+    <p>AWS (Lambda, DynamoDB, API Gateway, S3, SQS), Kafka, Docker, PostgreSQL, MongoDB, Redis, CI/CD</p>
+  </div>
+  <div>
+    <h4>Data &amp; ML</h4>
+    <p>OpenAI API, Google Gemini API, Hugging Face (Transformers, Datasets, tokenizers), PyTorch, TensorFlow, scikit-learn, pandas, NumPy</p>
+  </div>
+  <div>
+    <h4>NLP &amp; Multilingual AI</h4>
+    <p>Tokenization analysis, FLORES-200, NLLB-200, cross-lingual model evaluation</p>
+  </div>
+</div>
 
 </main>
 
