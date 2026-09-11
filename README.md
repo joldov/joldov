@@ -2,12 +2,10 @@
 
 Hi there, I'm Jessica, a backend software engineer based in Brooklyn, NY.
 
-More can be read from my personal portfolio website [here](https://joldov.github.io/joldov/)
+I graduated from Duke with a degree in Computer Science and a minor in Russian Culture & Language in Spring 2025.
 
-I graduated from Duke with a degree in Computer Science and a minor in Russian Culture & Language in Spring 2025, and I'm always happy to nerd out about distributed systems, event-driven architecture, or Kafka internals.
+You can learn more about me and my work on my [personal portfolio](https://joldov.github.io/joldov/).
 
-Outside of code, you'll usually find me relaxing at the park, out on a run, or enjoying a book by John Berger.
-
-Thanks for stopping by! 🎧
+Happy to connect!
 
 — Jessica
