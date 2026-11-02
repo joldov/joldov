@@ -6,6 +6,10 @@
   --line: #e6e6e6;
   --red: #e5322d;      /* spell-check squiggle */
   --blue: #2f45e8;     /* pen-blue annotations */
+  --apple: #d93a2b;
+  --leaf: #4f9a3a;
+  --stem: #6b4a2b;
+  --navy: #1f3a8a;
 
   --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
   --display: "Instrument Serif", "Newsreader", Georgia, serif;
@@ -23,6 +27,10 @@
     --line: #2c2c2c;
     --red: #ff5a4f;
     --blue: #7d8cff;
+    --apple: #ef4f3f;
+    --leaf: #6cbf55;
+    --stem: #b08a62;
+    --navy: #9fb2f0;
   }
 }
 
@@ -135,6 +143,21 @@ main {
   color: var(--blue);
 }
 .intro sup a:hover { text-decoration: underline; }
+
+/* Tiny inline drawings, like Holly's pasted-in pictures */
+.glyph {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  vertical-align: -0.1em;
+  margin: 0 -0.04em 0 0.1em;
+}
+.apple-body { fill: var(--apple); }
+.apple-shine { fill: #fff; opacity: 0.35; }
+.apple-stem { fill: none; stroke: var(--stem); stroke-width: 1.5; stroke-linecap: round; }
+.apple-leaf { fill: var(--leaf); }
+.tower { fill: var(--navy); }
+.tower-win { fill: var(--paper); }
 
 /* Inline Mongolian script, written vertically, like a tiny pasted-in picture */
 .mn {
