@@ -1,5 +1,5 @@
 // Highlight the nav link for the section currently in view.
-const sections = document.querySelectorAll('main [id], footer[id]');
+const sections = document.querySelectorAll('#work, #projects, #contact');
 const navLinks = document.querySelectorAll('.nav a');
 
 const setActive = (id) => {
