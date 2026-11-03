@@ -124,6 +124,11 @@ main {
   position: relative;
 }
 
+.intro .display {
+  font-family: var(--serif);
+  font-style: normal;
+}
+
 .intro-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
